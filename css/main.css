@@ -1,5 +1,5 @@
  .parallax-background{
-	height: 700px;
+	height: 1000px;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -16,15 +16,16 @@ overflow:hidden;
 
 .title{
 	text-align: center;
-	font-size: 40px;
+	font-size: 100px;
 	margin-top: 8%;
 
 }
 .picture{
 	background-image: url('../pics/H183.png');
 }
-.contact{
+.space{
 	text-align: center;
+	font-size: 40px;
 }
 
 .box-1{
@@ -37,10 +38,14 @@ overflow:hidden;
 }
 
 .box-3{
+	background-image: url('../pics/light-wood.jpg');
+	
+}
+.box-4{
 	background-color: #CECFBA;
 }
 
-.box-4{
+.box-5{
 	background-image: url('../pics/black-wood.jpg');
 }
 
@@ -49,7 +54,7 @@ overflow:hidden;
 ul {
 	list-style-type:none;
 	margin:0;
-	margin-left: 25%;
+
 	padding:0;
 	position: absolute;
 }
@@ -145,6 +150,7 @@ input[type=checkbox]:checked ~ #menu{
 	ul {
 		position: static;
 		display: none;
+		margin-right: 25%;
 	}
 	/*Create vertical spacing*/
 	li {
