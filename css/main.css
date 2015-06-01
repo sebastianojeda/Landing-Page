@@ -1,6 +1,6 @@
  .parallax-background{
 	height: 1000px;
--webkit-background-size: cover;
+-moz-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
@@ -45,16 +45,29 @@ overflow:hidden;
 }
 
 .box-3{
+	height: 1000px;
 	background-color: white;
+	border-top: solid;
+	
+	border-color: black;
+	
 	
 }
 .box-4{
+	height: 1000px;
 	background-color: white;
+	border-top: solid;
+	border-bottom: solid;
+	border-color: black;
 }
 
 .box-5{
 	background-image: url('../pics/black-wood.jpg');
+  color: white;
+  text-align: center;
+  font-size: 40px;
 }
+
 .back-ground{
 	height: 600px;
 	width: 1000px;
@@ -84,119 +97,218 @@ overflow:hidden;
 	margin: 0 auto;
 }
 
-/*navbar css*/
-/*Strip the ul of padding and list styling*/
-ul {
-	list-style-type:none;
-	margin:0;
 
-	padding:0;
-	position: absolute;
+/*Hamburger*/
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration:none;
+}
+#sidebar{
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    left: -250px;
+    height: 100%;
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    transition: 0.3s linear;
+    background:#292929;
+    color:#f1f2f3;
+    padding-top:0px;
+
+}
+#sidebar.active{
+  -webkit-transform: translate(250px, 0px);
+    -moz-transform: translate(250px, 0px);
+    -o-transform: translate(250px, 0px);
+    -ms-transform: translate(250px, 0px);
+    transform: translate(250px, 0px);
+}
+#content{
+  position: relative;
+  -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  padding-left:10%;
+  padding-right:10%;
+}
+#content.active{
+  -webkit-transform: translate(250px, 0px);
+    -moz-transform: translate(250px, 0px);
+    -o-transform: translate(250px, 0px);
+    -ms-transform: translate(250px, 0px);
+    transform: translate(250px, 0px);
+}
+#header{
+}
+.stuck-head{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top:0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+.nav-btn{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  background: url('http://i.imgur.com/DY8ozqQ.png') rgba(0,0,0,0.3) no-repeat;
+   background-color:#ffffff;
+  background-position: center center;
+  background-size: 50%;
+  opacity: 0.9;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.nav-btn.active{
+  background: url('http://i.imgur.com/fbhO5yG.png') rgba(255,255,255,0.3) no-repeat;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  transform:rotate(180deg);
+  border-radius:50%;
+  background-position: 50% 50%;
+}
+.nav-btn span{
+  display:none;
+}
+.navigation{
+  width:100%;
+  box-shadow:inset 0px 0px 10px rgba(0,0,0,0.7);
+}
+.navigation ul{
+  list-style:none;
+  background:#535353;
+  width:100%;
+  margin:0;
+  padding-top:100px;
+  padding-left:0;
+}
+.navigation ul li{
+  padding-top:5px;
+  padding-left:1em;
+  padding-bottom:5px;
+  border-bottom:1px solid #f1f2f3;
+  font-size: 1.5em;
+}
+.navigation ul li a{
+  color:#FFF;
+  text-shadow:0px 0px 10px rgba(0,0,0,0.8);
+  text-decoration:none;
+}
+.navigation ul li a:hover{
+  background:#FFF;
+  width:80%;
+  color:#000;
+  border-radius:5px;
+  padding:5px 10px;
+}
+#header .logo img{
+  margin:10px auto;
+  display:block;
+}
+#footer{
+  text-align:center;
+
 }
 
-/*Create a horizontal list with spacing*/
-li {
-	display:inline-block;
-	float: left;
-	margin-right: 1px;
-}
+ 
 
-/*Style for menu links*/
-li a {
-	display:block;
-	min-width:140px;
-	height: 50px;
-	text-align: center;
-	line-height: 50px;
-	font-family: 'Play', sans-serif;
-	color: #fff;
-	background: #2f3036;
-	text-decoration: none;
-}
 
-/*Hover state for top level links*/
-li:hover a {
-	background: #19c589;
-}
 
-/*Style for dropdown links*/
-li:hover ul a {
-	background: #f3f3f3;
-	color: #2f3036;
-	height: 40px;
-	line-height: 40px;
-}
 
-/*Hover state for dropdown links*/
-li:hover ul a:hover {
-	background: #19c589;
-	color: #fff;
-}
 
-/*Hide dropdown links until they are needed*/
-li ul {
-	display: none;
-}
 
-/*Make dropdown links vertical*/
-li ul li {
-	display: block;
-	float: none;
-}
+/*hovering images*/
 
-/*Prevent text wrapping*/
-li ul li a {
-	width: auto;
-	min-width: 100px;
-	padding: 0 20px;
+.carre_couleur
+{
+  width:300px;
+  height: 600px;
+  display: inline-block;
+  position: relative;
+  margin-top: 0px;
+  margin-right: 5%
 }
-
-/*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
-	display: block;
+.base_hov .retract
+{
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform-origin: 50% 20%; 
+  -webkit-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform-origin: 50% 20%;
+  -moz-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform-origin: 50% 20%;
+  -ms-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform-origin: 50% 20%;
+  transform: scale(1);
+  width:300px;
+  height: 600px;
+  position: absolute;
+  z-index: 2;
+  left:0;
 }
-
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-decoration: none;
-	color: #fff;
-	background: #19c589;
-	text-align: center;
-	padding: 10px 0;
-	display: none;
+.base_hov:hover .retract
+{
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(0.6);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(0.6);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(0.6);
+  transition: all 200ms ease-in;
+  transform: scale(0.6);
 }
-
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
+.acced
+{
+  width: 180px;
+  padding:10px;
+  bottom:0; 
+  position:absolute;
+  z-index: 1; 
+  text-align: left;
 }
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
+.big_acced
+{
+  color:#ffffff;
+  font-size:20px;
+  font-weight: 400;
+  font-family:'Roboto';
+}
+.middle_acced
+{
+  color:#ffffff;
+  font-size:15px;
+  font-weight: 400;
+  font-family:'Roboto';
 }
 
 
-/*Responsive Styles*/
 
-@media only screen and (max-width : 360px){
-	/*Make dropdown links appear inline*/
-	ul {
-		position: static;
-		display: none;
-		margin-right: 25%;
-	}
-	/*Create vertical spacing*/
-	li {
-		margin-bottom: 1px;
-	}
-	/*Make all menu links full width*/
-	ul li, li a {
-		width: 100%;
-	}
-	/*Display 'show menu' link*/
-	.show-menu {
-		display:block;
-	}
-}
+
+
+
+
+
+

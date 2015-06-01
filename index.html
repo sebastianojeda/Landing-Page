@@ -9,63 +9,110 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-		<!-- NAVBAR -->
-		<label for="show-menu" class="show-menu">Show Menu</label>
-	<input type="checkbox" id="show-menu" role="button">
 
-	<ul class="navbar-fixed-top"	id="menu">
-		<li><a href="#main" class="anchorLink">HOME</a></li>
-		<li><a href="#back">BACKGROUND</a></li>
-		<li><a href="#skill">SKILLS</a></li>
-		<li><a href="#project">PROJECTS</a></li>
-		<li><a href="#">CONTACT</a></li>
-	</ul>
-		<!-- END OF NAVBAR -->
+
+<!--In this section of code I have created my working hamburger-->
+    <div class="stuck-head">
+        <a class="nav-btn" id="nav-open" href="#sidebar"menu><span>menu</span></a>
+    </div>
+    <div id="leonardo">
+    <div id="sidebar">
+          <nav class="navigation">
+            <ul>
+               <li><a href="#back">Home</a></li>
+               <li><a href="#skill">SKILL</a></li>
+               <li><a href="#project">PROJECT</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+               <li><a href="#skill">MY RESUME</a></li>
+            </ul>
+             <!--This sectoin of code is my social media links that you see on my website-->
+     <!-- <ul id="social"  class="social-icons">
+        <li><a href="https://plus.google.com/"  class="google"></a></li>
+        <li><a href="http://youtube.com"  class="youtube"></a></li>
+        <li><a href="http://facebook.com"  class="facebook"></a></li>
+     </ul> -->
+          </nav>
+    </div>
+    </div>
+      <!--End of Hamburger-->
 		
-			<div class="parallax-background box-1" data-stellar-background-ratio="0.5"><span>
+<div class="parallax-background box-1" data-stellar-background-ratio="0.5"><span>
 
 		<h1 class="title"><img src="pics/sebi's-arrow.png"> Sebastian Ojeda</h1>
 			
 	</span>		
-	</div>
+</div>
 	
 	<a name="back" id="back">
 			<div class="parallax-background box-2" data-stellar-background-ratio="0.5"></a><span>
 				<h1 class="space">Background</h1>
 		<div class="back-ground">
-			
+			<p>My name is Sebastian ojeda, I am 16 years old, and I attend Pasadena High School.
+				 I am in the App Academy, Water Polo, and Swim Team.</p>
 		</div>
 	</span>		
-	</div>
+</div>
 	
+	<!-- SKILL PAGE -->
 	<a name="skill"	id="skill">
 	<div class="parallax-background box-3" data-stellar-background-ratio="0.5"></a><span>
 		<h1 class="space">Skills</h1>
-		<div class="skill">
-			
-		</div>
+		<div align="center" class="fond">
+
+    <div class="carre_couleur base_hov" style="background-color:white; border-color:black; border-style:soild;">
+    <div class="retract" style="background-color:black; opacity:0.8;">
+        <div class="big_acced" style="color:white;">PROJECT 1</div>
+        <div class="middle_acced">I took a trip to canada during break and it was great.</div>
+    </div>
+        <div class="acced">
+        <img src="pics/project1.jpg">
+    </div>
+    </div>
+
+    <div class="carre_couleur base_hov" style="background-color:white;">
+    <div class="retract" style="background-color:black; opacity:0.8;">
+        <div class="big_acced" style="color:white;">Old Game System</div>
+        <div class="middle_acced">In canada I got to see alot of cool stuff.</div>
+    </div>
+        <div class="acced">
+        <img src="img/me4.jpg">
+    </div>
+    </div>
+
+    <div class="carre_couleur base_hov" style="background-color:white;">
+    <div class="retract" style="background-color:black; opacity:0.8;">
+        <div class="big_acced" style="color:white;">BEST PC</div>
+        <div class="middle_acced">This computer is the best</div>
+    </div>
+    <div class="acced">
+        <img src="  ">
+    </div>
+    </div> 
+    </div>
 	</span>
 	</div>
+
+	<!-- PROJECT -->
 	
 	<a name="project"	id="project"></a>
 	<div class="parallax-background box-4" data-steller-background-ratio="0.5"></a><span>
-		<div class="">
-			<h1 class="space">Projects</h1>
-		</div>
-		<div class="">
-			
-		</div>
+		<h1 class="space">Projects</h1>
+		
 	</span>		
 	</div>
+
+<!-- CONTACT PAGE -->
 		<div class="parallax-background box-5" data-stellar-background-ratio="0.5" ><span>
-			<h1 class="space">CONTACT</h1>
+			<h1 >CONTACT</h1>
 			<div class="contact-page">
-			
-			</div>
-		</span>
+	           <?php require_once(__DIR__ . "contactform.php"); ?>
 		</div>
+	</span>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript"	src="js/bootstrap.min.js"></script>
