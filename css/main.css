@@ -100,9 +100,6 @@ overflow:hidden;
 
 /*Hamburger*/
 
-body{
-  font-family: 'Open Sans', sans-serif;
-}
 a{
   text-decoration:none;
 }
@@ -168,7 +165,7 @@ a{
   left: 20px;
   height: 50px;
   width: 50px;
-  background: url('http://i.imgur.com/DY8ozqQ.png') rgba(0,0,0,0.3) no-repeat;
+  background: url('../pics/arrow-left.svg') rgba(0,0,0,0.3) no-repeat;
    background-color:#ffffff;
   background-position: center center;
   background-size: 50%;
