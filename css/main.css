@@ -165,7 +165,7 @@ a{
   left: 20px;
   height: 50px;
   width: 50px;
-  background: url('../pics/arrow-left.svg') rgba(0,0,0,0.3) no-repeat;
+  background: url('../pics/arrow_back.png') rgba(0,0,0,0.3) no-repeat;
    background-color:#ffffff;
   background-position: center center;
   background-size: 50%;
@@ -239,8 +239,8 @@ a{
 
 .carre_couleur
 {
-  width:300px;
-  height: 600px;
+  width:500px;
+  height: 300px;
   display: inline-block;
   position: relative;
   margin-top: 0px;
@@ -260,8 +260,8 @@ a{
   transition: all 200ms ease-in;
   transform-origin: 50% 20%;
   transform: scale(1);
-  width:300px;
-  height: 600px;
+  width:500px;
+  height: 300px;
   position: absolute;
   z-index: 2;
   left:0;
@@ -301,7 +301,98 @@ a{
   font-family:'Roboto';
 }
 
+#img1{
+  height: 295px;
+  width: 495px;
+}
 
+
+
+
+/*Facebook, google+, and twitter icons*/
+
+.social-icons{
+  list-style:none;
+  width:250px;
+  margin:100px auto 0 auto;
+  
+}
+ul li{
+margin-right:10px;
+}
+
+ul.social-icons li a{
+  float:left;
+  background-position:0 0;
+  background:repeat:no-repeat;
+  display:inline-block;
+  text-indent:-9999px;
+  overflow:hidden;
+  width:50px;
+  height:50px;
+  position:relative;
+  margin:0 3px;
+border-radius:50px;
+
+}
+.google{
+background-image:url('http://i.imgur.com/6y0iC8L.png?1');
+    transition:background-image 0.5s ease-in-out; 
+  -moz-transition: 0.5s ease-in-out; 
+  -webkit-transition: 0.5s ease-in-out; 
+  -o-transition: 0.5s ease-in-out;
+}
+
+.youtube{
+background-image:url('https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/v/t1.0-1/c62.62.776.776/s50x50/945323_366239146811715_634589613_n.png?oh=fd239b7bfc7f4bac04d691df28747542&oe=55F917FA&__gda__=1442443552_ffe9c6e1485f7b5e56b989fe91251acb');
+    transition:background-image 0.5s ease-in-out; 
+  -moz-transition: 0.5s ease-in-out; 
+  -webkit-transition: 0.5s ease-in-out; 
+  -o-transition: 0.5s ease-in-out;
+}
+.facebook{
+background-image:url('http://i.imgur.com/qqQk6GW.png?1');
+}
+
+
+.google:hover{
+background-image:url('http://i.imgur.com/qgFiraS.png?1');
+  
+    transition:all 0.5s ease-in-out; 
+  -moz-transition: 0.5s ease-in-out; 
+  -webkit-transition: 0.5s ease-in-out; 
+  -o-transition: 0.5s ease-in-out;
+}
+
+.youtube:hover{
+background-image:url('http://www.ryanvalle.me/assets/social/social_github-b860b2cc75401c6df6dfbbf360551f9c.png');
+    transition:background-image 0.5s ease-in-out; 
+  -moz-transition: 0.5s ease-in-out; 
+  -webkit-transition: 0.5s ease-in-out; 
+  -o-transition: 0.5s ease-in-out;
+}
+.facebook:hover{
+background-image:url('http://i.imgur.com/dzgQEBP.jpg?1');
+    transition:background-image 0.5s ease-in-out; 
+  -moz-transition: 0.5s ease-in-out; 
+  -webkit-transition: 0.5s ease-in-out; 
+  -o-transition: 0.5s ease-in-out;
+}
+
+@media all and(max-width: 360px){
+
+}
+@media all and(max-width: 370px){
+
+}
+
+@media all and(max-width: 480px){
+
+}
+
+@media all and(max-width: 1024px){
+
+}
 
 
 
